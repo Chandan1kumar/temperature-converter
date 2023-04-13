@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section class="converter">
+			<h1>Temperature Converter</h1>
+			<form>
+				<label for="temp">Enter temperature:</label>
+				<input type="text" id="temp" name="temp">
+				<select id="scale">
+					<option value="celsius">Celsius</option>
+					<option value="fahrenheit">Fahrenheit</option>
+				</select>
+				<input type="button" value="Convert" onclick="convertTemp()">
+			</form>
+			<p id="result"></p>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Temperature Converter</p>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
